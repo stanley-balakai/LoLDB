@@ -10,8 +10,20 @@
 </head>
 <body>
     <h1 class="champions ">Champions</h1>
-    <br>
-    
+         
+            <br> 
+        
+            <% champions.forEach(function(champion){ %>
+                <hr>
+                <div>
+                    <a href="/main/detail/<%= champion.id %>">
+
+                    <div><%= champion.name %></div>
+                </a>
+                </div>
+            
+            <% }) %>
+        </div>
 
     
 </body>

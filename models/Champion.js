@@ -6,7 +6,9 @@ const championSchema = mongoose.Schema(
         name: String,
         description: String,
         avatar: String,
+        comments: [String]
     },
+
     {
         timestamps: true
     }
