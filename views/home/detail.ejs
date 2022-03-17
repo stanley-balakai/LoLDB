@@ -29,6 +29,20 @@
             <button type="submit">Add Comment</button>
 
         </form>
+        <% let count = 0 %>
+        <% champion.comments.forEach(function(comment){ %>
+            <hr>
+            <div>
+
+                <div><%= comment %></div>
+                <a href="/main/detail/<%= champion.id %>/<%=count %>">Delete</a>
+            </a>
+            </div>
+         
+            <% count++ %>
+
+        <% }) %>
+    </div>
     </div>
     
     

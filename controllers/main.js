@@ -8,7 +8,7 @@ const Champion = require('../models/Champion').Champion
 exports.main_get = (req, res) => {
     Champion.find()
     .then(champions => {
-        console.log(champions)
+        // console.log(champions)
         res.render("home/main", {champions: champions})
     })
     .catch(err => {
@@ -27,9 +27,24 @@ exports.champion_show_get = (req, res) => {
     })
 }
 
-exports.comment_post = (req, res) => {
-    console.log(req.body);
+exports.comment_post = async (req, res) => {
+    // console.log(req.body.comment);
+    let champ = await Champion.findById(req.params.id)
+    // console.log(champ)
+    champ.comments.push(req.body.comment)
+    await champ.save()
+    res.redirect(`/main/detail/${champ._id}`)
 
+}
+exports.comment_delete = async (req, res) => {
+    let champ = await Champion.findById(req.params.id)
+    // let commentIndex = champ.comments.findIndex((comment)=> {
+    //     comment === req.params.comment
+    // })
+
+    champ.comments.splice(req.params.comment, 1)
+    await champ.save()
+    res.redirect(`/main/detail/${champ._id}`)
 }
 
 
