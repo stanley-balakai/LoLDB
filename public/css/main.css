@@ -54,14 +54,33 @@
         border:solid cornflowerblue
         
     }
-    .pic{
+    .pic {
         max-width: 450px;
         max-height: 4500px;
     }
     .championName {
         font-size: 100px;
     }
-  body {
+  /* body {
       height: 100vh;
       width: 100vw;
+  } */
+
+  .frontpage {
+      
+    backdrop-filter: blur(1080px);
+        text-align: center;
+        background-size:cover;
+      background-image:url(https://cdn.segmentnext.com/wp-content/uploads/2017/08/League-of-Legends-Ornn.jpeg);
+      
+
+
+  }
+  .welcome{
+    font-family: 'Press Start 2P', cursive;
+    color: darkgray;
+
+  }
+  p {
+      color: darkgray;
   }
