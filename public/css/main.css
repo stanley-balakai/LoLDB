@@ -6,6 +6,7 @@
         text-align: center;
         background-image:url(https://divingdaily.com/wp-content/uploads/2020/01/League-of-Legends_02.jpg);
         
+        
     }
   
     .detail-container{
@@ -46,8 +47,9 @@
     }
     .comments{
         margin: 1%;
-        align: left;
+      
         color:goldenrod;
+        
          
     }
     .image {
@@ -84,3 +86,30 @@
   p {
       color: darkgray;
   }
+
+  .champions {
+    font-family: 'Press Start 2P', cursive;
+    color:aliceblue;
+    text-align: center;
+  }
+  .main {
+      
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: x-large;
+      background-image: linear-gradient(goldenrod, rgb(77, 113, 231));
+  }
+
+  .championLink {
+      color: rgb(209, 177, 139);
+      text-decoration: none;
+      font-family: 'Press Start 2P', cursive;
+  }
+
+  .championLink:hover {
+    color: rgb(223, 217, 210);
+    
+    
+}
