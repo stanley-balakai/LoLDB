@@ -6,7 +6,7 @@ Your go-to spot for League of Legends Lore and fun facts!
 
 If you've ever wondered about your favorite champion, this is the place for you!
 
-LoLDB is a web application created specifically for players to learn more about their favorite game, while providing them the opportunity to add and delete comments about the champions as well. This is your chance to comment how broken you think some champs are!! owo
+LoLDB is a web application created specifically for players to learn more about their favorite game, while providing them the opportunity to add and delete comments about the champions as well. This is your chance to comment how broken you think some champs are!! 
 
 
 ## Screenshots
