@@ -57,3 +57,6 @@ mongoose.connect(process.env.mongoDBURL,{
 });
 
 app.listen(PORT, ()=> console.log(`App is running on ${PORT}`));
+
+
+// ./public/images/const-vs-let-vs-var (1).png
